@@ -1,0 +1,151 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\newlabel{sec:introduction}{{I}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {I-A}DPOAE, DPOAE Input-output functions and DPOAE level maps for assessment of the cochlear amplifier}{1}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Two DPOAE level maps measured in different normal-hearing subjects at $f_2 = 10 kHz$. These DPOAE LMs demonstrate cases from the study of Bader et al., 2021, where a reasonable measurement of I/O functions (black, continuous lines) cannot be achieved with one common group-optimal stimulus path in the $(L_2, L_1)$-plane, lying somewhere between the individual optimal stimulus paths (dashed black lines). The black solid lines are referred to as ridges of the DPOAE LMs.}}{2}{}\protected@file@percent }
+\newlabel{fig_Bdr}{{1}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {I-B}DPOAE level dependence}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {I-C}Aim of a new method to derive DPOAE level maps}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Methods}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {II-A}Measurement system and calibration}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {II-B}DPOAE acquisition – Static level maps}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {II-C}DPOAE acquisition – Adaptive level maps}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Model-based algorithms to identify the ridge of DPOAE LMs: A: Model surface of an ideal DPOAE LM, described via perpendicular scans, illustrating the expected structure of a typical DPOAE LM. B: Ridge estimator method. To minimize the number of points per measurement, this method employs two ridge scans ($p^1_i$ and $p^2_i$) and one intermediate point $p^s$. Ideally, it samples seven points to estimate all major characteristics of the DPOAE LM. C: Ridge follower method. This method strongly relies on the estimated DPOAE LM surface and is used to enhance the resolution of points along the ridge. It requires a minimum of three points per scan (the ridge point and one point on either side) and provides a prescribed overall amount of scans perpendicular to the ridge.}}{4}{}\protected@file@percent }
+\newlabel{fig_AMB}{{2}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Data-based algorithm to identify DPOAE LM without a priori assumptions on its shape. A situation may arise where certain points have been measured, but the model surface cannot be accessed. In such cases, an algorithm is used that systematically searches for data points in the $(L_2, L_1)$ level depending on the SNR. A: The general case of the Polygonal Search Method (PSM) splits the ROI into smaller polygons and takes the centre of mass ($p_{n+1}$, marked as cross) of the biggest polygon (gray hatched area) to be measured next. B: An expansion case of PSM is a stricter version of general case, which bases its prediction only on “accepted” points. It generates the boundary (n border), by using square regions of vicinity around “accepted” points. C: Inside the boundary, the general case of the PSM (A) is applied to find the next point to be measured.}}{5}{}\protected@file@percent }
+\newlabel{fig_ADB}{{3}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {II-D}Study design and subjects}{5}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Adaptive acquisition workflow: Black arrows – regular sequence, red arrows – exception sequence (if measurement at prescribed point is not possible for any reason).}}{5}{}\protected@file@percent }
+\newlabel{fig_SQS}{{4}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {II-E}Post-processing and analysis}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {II-E.1}Connectivity-based analysis}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Accepted points and their correspondent alpha shapes: adaptive (black) and static (red) level maps. Initial points for both approaches are highlighted with blue circles. An ideal scenario where all points meet the acceptance criteria, and the level maps do not clip to the ROI boundaries.}}{6}{}\protected@file@percent }
+\newlabel{fig_CNT}{{5}{6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {II-E.2}Comparison of obtained maps}{6}{}\protected@file@percent }
+\newlabel{eq1}{{1}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Results}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Comprison of feature identification with SLM and ALM method. A, D: A level map interpolated with biharmonic splines and its ridge, estimated using the "ridge searcher" method. B, E: Estimated ridges from the LMs in A, D and a general ridge derived through iterative polynomial fitting of these two ridges. C, F: Distances between the general ridge and measured points for both maps. A–C: represent a nearly ideal case (S345, 4 kHz), where the data are centered to the sampling grid for both methods, whereas D–F show a more typical result of LM acquisition, where the sampled area differs more clearly between both methods. (S345, 2 kHz).\\ Black color – ALM, Red color – SLM.}}{7}{}\protected@file@percent }
+\newlabel{fig_BLK}{{6}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {III-A}Qualitative features of the interpolation and ridge comparison method}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {III-B}Acceptance rate and time efficiency}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {III-C}Coverage of DPOAE LMs}{7}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces A) Share of accepted points over frequencies for all ears. B) Distribution of percentage of accepted points per single LM measurement for all frequencies and ears. Black color shows the method with the smaller or equal share. The ALM method contributes more accepted DPOAE determinations at all frequencies (panel A), and it succeeds in 36\% of the cases to provide 95–100\% valid DPOAE, i.e. in theses cases at least 20/21 DPOAE measurements within a given LM were reaching the SNR criterion, as compared to only 10\% for the SLM method.}}{8}{}\protected@file@percent }
+\newlabel{fig_EFF}{{7}{8}}
+\newlabel{eq2}{{2}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Discussion}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {IV-A}Method advantages and drawbacks}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Bivariate histogram of level map areas and their corresponding point density. This histogram is representing the qualitative aspect of LM properties which were encountered oin this study. There is an assumed ideal LM with largest area and density, which is located in $(0, 0)$, but cannot be obtained with the given amount of $N_{all}$. The colour scheme ranges from black through red to white. Higher colour intensity designates higher amount of counts.}}{9}{}\protected@file@percent }
+\newlabel{fig_TGT}{{8}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Empirical cumulative distribution function of the distances between the estimated ridge and measured points for all LMs where both, ALM and SLM, passed the acceptance criteria for identifying a ridge (each ridge length must be more than $12dB$ and both - ALM and SLM ridges - must exist)}}{9}{}\protected@file@percent }
+\newlabel{fig_CDF}{{9}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {IV-B}Time concern}{9}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Median, interquartile ranges, and range of the share of accepted DPOAE within a level map which was obtained by the four adaptive acquisition methods, grouped into three frequency ranges. Numbers above the box-whisker plots are: Median, interquartile range, and amount of datasets containing at least 6 accepted DPOAE, which were 78 out of 84 possible datasets.}}{9}{}\protected@file@percent }
+\newlabel{fig_BXP}{{10}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {IV-C}LM post-processing and analysis}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Conclusion (SKETCH) (WORDS LIMIT = 300)}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Template}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VI-A}Equations}{10}{}\protected@file@percent }
+\newlabel{eq}{{3}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {VI-B}\LaTeX  -Specific Advice}{10}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Magnetization as a function of applied field. It is good practice to explain the significance of the figure in the caption.}}{11}{}\protected@file@percent }
+\newlabel{fig1}{{11}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Guidelines for Graphics Preparation and Submission}{11}{}\protected@file@percent }
+\newlabel{sec:guidelines}{{VII}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-A}Types of Graphics}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {VII-A.1}Color/Grayscale figures}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {VII-A.2}Line Art figures}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {VII-A.3}Author photos}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {VII-A.4}Tables}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-B}Multipart figures}{11}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Units for Magnetic Properties}}{12}{}\protected@file@percent }
+\newlabel{table}{{I}{12}}
+\newlabel{tab1}{{I}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-C}File Formats For Graphics}{12}{}\protected@file@percent }
+\newlabel{formats}{{VII-C}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-D}Sizing of Graphics}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-E}Resolution }{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-F}Vector Art}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-G}Color Space}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-H}Accepted Fonts Within Figures}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-I}Using Labels Within Figures}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {VII-I.1}Figure Axis labels }{12}{}\protected@file@percent }
+\citation{b3}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {VII-I.2}Subfigure Labels in Multipart Figures and Tables}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-J}File Naming}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-K}Referencing a Figure or Table Within Your Paper}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-L}Checking Your Figures: The IEEE Graphics Analyzer}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-M}Submitting Your Graphics}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {VII-N}Color Processing/Printing in IEEE Journals}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Conclusion}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-A}References}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-B}Footnotes}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Appendix I: Submitting Your Paper for Review}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {I-A}Final Stage}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {I-B}Review Stage Using ScholarOne\textregistered \ Manuscripts}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {I-C}Final Stage Using ScholarOne Manuscripts}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {I-D}Copyright Form}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Appendix II: IEEE Publishing Policy}{14}{}\protected@file@percent }
+\citation{b1,b2}
+\citation{b3}
+\citation{b5}
+\citation{b6,b7}
+\citation{b8,b9}
+\citation{b10}
+\citation{b13}
+\citation{b14}
+\citation{b16}
+\citation{b17}
+\citation{b18,b19}
+\citation{b20}
+\citation{b21}
+\citation{b22}
+\@writefile{toc}{\contentsline {section}{Appendix III: Publication Principles}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Appendix IV: Reference Examples}{15}{}\protected@file@percent }
+\citation{b23}
+\citation{b24}
+\citation{b25,b26}
+\citation{b27}
+\citation{b29}
+\citation{b30,b31}
+\citation{b32,b33}
+\citation{b34}
+\bibcite{b1}{1}
+\bibcite{b2}{2}
+\bibcite{b3}{3}
+\bibcite{b4}{4}
+\bibcite{b5}{5}
+\bibcite{b6}{6}
+\bibcite{b7}{7}
+\bibcite{b8}{8}
+\bibcite{b9}{9}
+\bibcite{b10}{10}
+\bibcite{b11}{11}
+\bibcite{b12}{12}
+\bibcite{b13}{13}
+\bibcite{b14}{14}
+\bibcite{b15}{15}
+\bibcite{b16}{16}
+\bibcite{b17}{17}
+\bibcite{b18}{18}
+\bibcite{b19}{19}
+\bibcite{b20}{20}
+\bibcite{b21}{21}
+\bibcite{b22}{22}
+\bibcite{b23}{23}
+\bibcite{b24}{24}
+\bibcite{b25}{25}
+\bibcite{b26}{26}
+\bibcite{b27}{27}
+\bibcite{b28}{28}
+\bibcite{b29}{29}
+\bibcite{b30}{30}
+\bibcite{b31}{31}
+\bibcite{b32}{32}
+\bibcite{b33}{33}
+\bibcite{b34}{34}
+\@writefile{toc}{\contentsline {section}{References}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Biographies}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{First A. Author}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Second B. Author}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Third C. Author, Jr.}{17}{}\protected@file@percent }
+\gdef \@abspage@last{17}

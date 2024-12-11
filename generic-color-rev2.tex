@@ -32,26 +32,7 @@ Tsukuba, Japan (e-mail: author@nrim.go.jp).}}
 \maketitle
 
 \begin{abstract}
-These instructions give you guidelines for preparing papers for 
-IEEE Transactions and Journals. Use this document as a template if you are 
-using \LaTeX. Otherwise, use this document as an 
-instruction set. The electronic file of your paper will be formatted further 
-at IEEE. Paper titles should be written in uppercase and lowercase letters, 
-not all uppercase. Avoid writing long formulas with subscripts in the title; 
-short formulas that identify the elements are fine (e.g., "Nd--Fe--B"). Do 
-not write ``(Invited)'' in the title. Full names of authors are preferred in 
-the author field, but are not required. Put a space between authors' 
-initials. The abstract must be a concise yet comprehensive reflection of 
-what is in your article. In particular, the abstract must be self-contained, 
-without abbreviations, footnotes, or references. It should be a microcosm of 
-the full article. The abstract must be between 150--250 words. Be sure that 
-you adhere to these limits; otherwise, you will need to edit your abstract 
-accordingly. The abstract must be written as one paragraph, and should not 
-contain displayed mathematical equations or tabular material. The abstract 
-should include three or four different keywords or phrases, as this will 
-help readers to find it. It is important to avoid over-repetition of such 
-phrases as this can result in a page being rejected by search engines. 
-Ensure that your abstract reads well and is grammatically correct.
+Distortion-product otoacoustic emissions are intermodulation products upon stimulation by two tones and reflect the nonlinear processing of sound waves within the inner ear by the so-called cochlear amplifier. Therefore, they are interpreted as diagnostic measure of the physiological state of it. Because of their very small amplitudes, current clinical systems measure one distortion product amplitude at typically some 7 frequencies and thus can be regarded as a 1D-Scan. More advanced systems record input-output functions of the distortion product amplitudes, where, however, both tones are varied in a prescribed proportion (2D-scan). When varying both tones independently, a 3D-scan giving a more complete and accurate information about the cochlea under investigation is obtained, but at the cost of vastly extended measurement time. Here, we introduce an adaptive measurement method that is shown to collect more distortion products having sufficient signal-to-noise ratio, and that in the majority of the cases leads to the identification of the so-called individually optimal stimulus level path. We compared the adaptive measurement method to a static one where the stimulus level combination are prescribed beforehand. Within a tolerance of x dB, the adaptive method found the same optimum paths than the static method within the overlap area genertaed by both methods, and added x\% more optimum stimulus paths where the static method failed. Ultimately, a bivariate histogram of area and density of the sampling of the optimum path shows that the adaptive method makes a better compromise between two concurring goals, as the compromise achieved is situated closer to the unachievable goal of reaching maximum density and high coverage at the same time. Thus, the adaptive method has been shown to yield a time-efficient approach to characterize the inner ear more comprehensively, which is expected to leads to more accurate diagnosis of the state of the inner ear.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -60,10 +41,9 @@ auditory system,
 biharmonic spline interpolation,
 distortion measurement,
 distortion product otoacoustic emissions,
-delaunay triangulation,
-ear,
-shape,
-shape measurement
+Delaunay triangulation,
+hearing,
+beta skeleton
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -87,7 +67,7 @@ A more advanced approach, DPOAE input-output (I/O) functions, uses multiple leve
 In this method, the DPOAE pressure responses are plotted as a function of the level of the second primary.
 DPOAE input-output (I/O) functions enhance diagnostic sensitivity for detecting cochlear-amplifier-related hearing loss (Gaskill and Brown, 1990; Stover, 1996, Gavin \& Dhar, 2024, JARO).
 When extrapolated from semi-logarithmically scaled I/O functions, this approach provides an almost linear relationship between DPOAE threshold and pure-tone hearing threshold (Boege \& Janssen, 2002; Gorga et al., 2003).
-Importantly, this method allows the use of inclusion criteria that are independent of signal-to-noise ratio (SNR) thereby improving diagnostic reliability (Zelle et al. 2017).
+Importantly, this method allows the use of inclusion criteria that are independent of signal-to-noise ratio (SNR) thereby improving diagnostic yield and accuracy (Zelle et al. 2017).
 
 Finally, DPOAE can be sampled at a range of independent level combinations creating a three-dimensional representation in the $(L_2, L_1)$-plane, thus adding a third dimension to the data recorded per given frequency $f_2$.
  
@@ -335,7 +315,7 @@ p_{n} x_{\beta}^n&+p_{n-1} x_{\beta}^{n-1}+\cdots+p_{k+1} x_{\beta}^{k+1} \\
 \label{eq1}
 \end{align}
 
-The K-Fold cross-validation is used to prevent overfitting, where amount of folds is selected dynamically based on size of data (with minimum four and maximum ten folds).
+The k-fold cross-validation is used to prevent overfitting, where amount of folds is selected dynamically based on size of data (with minimum four and maximum ten folds).
 When one of the lines is considered to be overfitted, then previous state is taken as a result.
 
 A common ridge is then determined by fitting the remaining free components using the previously identified higher-order terms.
@@ -345,10 +325,10 @@ The final step is to calculate the distances of points to the joint fit of the r
 
 \begin{figure*}
 \includegraphics[width=\textwidth]{Fig_5_assembly2.eps} %,height=4cm
-\caption{Features estimation routine: A, D) A level map interpolated with biharmonic splines and its ridge, estimated using the "ridge searcher" method.
-B, E) Estimated ridges from the LMs in A, D) and a general ridge derived through iterative polynomial fitting of these two ridges.
-C, F) Distances between the general ridge and measured points for both maps.
-A-C) represent a nearly ideal case (S345, 4 kHz), whereas D-F) show more common outcome of LM acquisition (S345, 2 kHz).\\ Black colour – Adaptive Level Map, Red colour – Static Level Map.}
+\caption{Comprison of feature identification with SLM and ALM method. A, D: A level map interpolated with biharmonic splines and its ridge, estimated using the "ridge searcher" method.
+B, E: Estimated ridges from the LMs in A, D and a general ridge derived through iterative polynomial fitting of these two ridges.
+C, F: Distances between the general ridge and measured points for both maps.
+A–C: represent a nearly ideal case (S345, 4 kHz), where the data are centered to the sampling grid for both methods, whereas D–F show a more typical result of LM acquisition, where the sampled area differs more clearly between both methods. (S345, 2 kHz).\\ Black color – ALM, Red color – SLM.}
 \label{fig_BLK}
 \end{figure*}
 
@@ -356,18 +336,18 @@ A-C) represent a nearly ideal case (S345, 4 kHz), whereas D-F) show more common 
 Fig.\ref{fig_BLK}A-C and Fig.\ref{fig_BLK}D-F show two examples of LMs pairs obtained with the adaptive (black curve) and the static (red curve) method.
 The upper example (Fig.\ref{fig_BLK}A) illustrates an acquisition of a nearly ideal level map.
 For both, the ALM and the SLM, all measured points met the SNR criterion (only points, passing the SNR criterion, are connected by the mesh illustrating the surface in (Fig.\ref{fig_BLK}B)).
-The interpolation method used, introduces rippling along the ridge, which putatively does not reflect the true shape of the level map, and should be considered as an artefact resulting from limited sampling density.
+The interpolation method used introduces rippling along the ridge, which putatively does not reflect the true shape of the level map, and should be considered as an artefact resulting from the spline interpolation method.
 The black and the red line designate the result of the ridge search algorithm (see Section II.E).
-In this example (Fig.\ref{fig_BLK}A-C), the ridge lines cut almost always through the central points accurately.
+In the upper example (Fig.\ref{fig_BLK}A–C), the ridge lines cut almost always through the central points of the sampling grid for both methods, whereas for the bottom example, this is the casse only for the ALM method. Nonetheless, the ridges are almost identical where the data overlap.
 
 
-A less favourable example with an irregular form of the level maps  is shown in Fig.\ref{fig_BLK}D.
+An example where SLM and ALM methods have led to slightly different area coverage is shown in Fig.\ref{fig_BLK}D.
 Fig.\ref{fig_BLK}B and E show the projection of the identified ridges and the stimulus level pairs of accepted points onto the $(L_2, L_1)$-plane.
-In an ideal case the ridges of both, ALM and SLM, align closely and correspond to straight lines.
-However, in Fig.\ref{fig_BLK}E,  the ridge identified for the SLM method is shifted toward lower $L_1$ values, intersecting only one experimentally measured point exactly, while, the ridge identified by the ALM method aligns more closely with the centre line of the acquisition.
-The projection of both ridge identifications onto the $(L_2, L_1)$-plane appears to comprise deviations from a straight line, although it is not completely clear to which extent the deviations are a result of the surface interpolation method.
+In the upper example, the ridges of both, ALM and SLM, align closely and correspond to almost straight lines.
+However, in Fig.\ref{fig_BLK}E,  the area covered by the SLM method is shifted toward lower $L_2$ values, especially at high levels. Nonetheless, the ridges identified by both methods are very close to each other in the area where both methods contribute.
+The projection of both ridge identifications onto the $(L_2, L_1)$-plane shows that the ALM technique succeeds in capturing the ridge on its center line of the sampling grid in both examples.
 
-\subsection{Time efficiency}
+\subsection{Acceptance rate and time efficiency}
 Fig.\ref{fig_EFF}A shows the acceptance rate (Nacc/Nall), representing the portion of points that passed the $10 dB$ SNR criterion, across all six ears, dependent on frequency.
 In general, ALM measurements resulted in a greater number of accepted points at most frequencies, the exceptions being 3, 12, and 13 kHz.
 Fig.\ref{fig_EFF}B shows the histogram of the acceptance rate within a single LM across all frequencies and all ears.
@@ -378,7 +358,7 @@ The median of the acceptance rate was 0.62 and 0.78 for SLM and ALM indicating t
 \centerline{\includegraphics[width=\columnwidth]{Fig_Efficiency_v3.png}}
 \caption{A) Share of accepted points over frequencies for all ears.
 B) Distribution of percentage of accepted points per single LM measurement for all frequencies and ears.
-Black color shows the method with the smaller or equal share.}
+Black color shows the method with the smaller or equal share. The ALM method contributes more accepted DPOAE determinations at all frequencies (panel A), and it succeeds in 36\% of the cases to provide 95–100\% valid DPOAE, i.e. in theses cases at least 20/21 DPOAE measurements within a given LM were reaching the SNR criterion, as compared to only 10\% for the SLM method.}
 \label{fig_EFF}
 \end{figure}
 
@@ -403,9 +383,9 @@ Higher colour intensity designates higher amount of counts.}
 \label{fig_TGT}
 \end{figure*}
 
-Fig.\ref{fig_TGT} shows a bivariate histogram of area and density for the obtained level maps, with the left panel representing ALM, and the right panel representing SLM.
-The majority of measurements (clustered with brightest square as a centre) acquired with the ALM method is shifted towards $(0, 0)$, compared to those made with the SLM method.
-This shift suggests that ALMs prioritizes point density over area coverage, resulting in improved resolution.
+Fig.\ref{fig_TGT} shows a bivariate histogram of area and density for the obtained LMs, with the left panel representing ALM, and the right panel representing SLM.
+The majority of measurements (clustered with brightest square as a centre) acquired with the ALM method is shifted closer towards $(0, 0)$, compared to those obtained by the SLM method.
+This shift suggests that ALMs prioritizes point density over area coverage, resulting in an improved resolution of the LMs close to the ridge.
 
 
 \begin{figure}[ht]
@@ -433,8 +413,8 @@ For the both lower frequency ranges, judged by the median, more than 80\% of the
 On the contrary, for the high-frequency range, as judged by the median, only 36\% of the accepted points were contributed by the a priori methods, whereas the data-based methods gained importance and contributed 19\%.
 
 \section{Discussion}
-This study pursued two major goals: First, design and approbate an adaptive level-map acquisition method that is able to prove the existence and sample the ridge.
-The second goal was to develop and investigate a method for characterization and comparison of all kind of level maps obtained by different methods without limiting them to a priori assumptions on their shape such as the 5-parameter model.
+This study pursued two major goals: First, design and evaluate an adaptive level-map acquisition method that is able sample the LM where DPOAE with acceptable SNR can be obtained.
+The second goal was to develop and investigate a method for characterization and comparison of LMs obtained by different methods without limiting the comparison to a priori assumptions on their shape such as the 5-parameter model.
 
 \subsection{Method advantages and drawbacks}
 In most or probably all medical imaging techniques, the acquisition of the data, even when not measured simultaneously in a single capture, is not designed to depend on the data themselves.
@@ -479,7 +459,10 @@ Especially here, the ALM method shows that a clearly better compromise has been 
 
 
 \section{Conclusion (SKETCH) (WORDS LIMIT = 300)}
-Text
+Here, we have introduced an adaptive method to acquire DPOAE LMs. DPOAE LMs are of clinical interest, because I/O functions derived from LMs are basically not affected by the choice of a group-optimal stimulus level path, and because conductive (i.e., middle-ear) loss might potentially be detectable, enabling a differential diagnosis that distinguishes it from inner-ear loss (Janssen, 2005, Marcrum, 2017, EarHear 38). On the other hand, LMs are important from a basic-research perspective for a more complete characterization of the distortion generation process. The comparison of these to the output of models of cochlear mechanics then can serve to evaluate and improve such models.
+The ALM technique has produced maps which are qualitatively equivalent to SLMs within the region of overlap, as judged by the identified ridges as well as by the rms-pressure difference between these maps within the overlap region. Simultaneously, the ALM data yield is considerably higher, in our study with normal-hearing subjects by x\%... possibly: ...and has led to y\% more DPOAE with acceptable SNR in case where the lowest stimulus level with acc. DPOAE was >=40 dB SPL. {\bf (?)}
+Ultimately, the bivariate histogram of area and density has shown that the ALM makes a clearly better compromise between the both concurring goals, and that the compromise achieved is situated closer to the unachievable goal, i.e., reaching maximum density and high coverage at the same time.
+
 
 \section{Template}
 
