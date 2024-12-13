@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.21)  11 DEC 2024 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.21)  13 DEC 2024 14:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -351,13 +351,13 @@ Package epstopdf Info: Source file: <LOGO-generic-web.eps>
 (epstopdf)                    size: 6621 bytes
 (epstopdf)             Command: <repstopdf --outfile=LOGO-generic-web-eps-conve
 rted-to.pdf LOGO-generic-web.eps>
-(epstopdf)             \includegraphics on input line 71.
+(epstopdf)             \includegraphics on input line 73.
 Package epstopdf Info: Output file is already uptodate.
 <LOGO-generic-web-eps-converted-to.pdf, id=1, 55.20625pt x 34.1275pt>
 File: LOGO-generic-web-eps-converted-to.pdf Graphic file (type pdf)
 <use LOGO-generic-web-eps-converted-to.pdf>
 Package pdftex.def Info: LOGO-generic-web-eps-converted-to.pdf  used on input l
-ine 71.
+ine 73.
 (pdftex.def)             Requested size: 48.0pt x 29.674pt.
 
 Overfull \hbox (259.0pt too wide) has occurred while \output is active
@@ -395,80 +395,74 @@ Overfull \vbox (5.0pt too high) has occurred while \output is active []
 <Fig_ALM_ModelBased.png, id=28, 752.8125pt x 250.68657pt>
 File: Fig_ALM_ModelBased.png Graphic file (type png)
 <use Fig_ALM_ModelBased.png>
-Package pdftex.def Info: Fig_ALM_ModelBased.png  used on input line 149.
+Package pdftex.def Info: Fig_ALM_ModelBased.png  used on input line 147.
 (pdftex.def)             Requested size: 516.0pt x 171.84166pt.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 162.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 160.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 162.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 160.
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 181.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 176.
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [3]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 189.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 197.
 
 <Fig_ALM_DataBased.png, id=33, 712.16063pt x 236.38312pt>
 File: Fig_ALM_DataBased.png Graphic file (type png)
 <use Fig_ALM_DataBased.png>
-Package pdftex.def Info: Fig_ALM_DataBased.png  used on input line 206.
+Package pdftex.def Info: Fig_ALM_DataBased.png  used on input line 198.
 (pdftex.def)             Requested size: 516.0pt x 171.27779pt.
-
-Underfull \vbox (badness 2111) has occurred while \output is active []
-
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [4 <./Fig_ALM_ModelBased.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 243--250
+Underfull \hbox (badness 10000) in paragraph at lines 236--243
 []\OT1/ptm/m/n/10 DPOAE LMs were recorded bi-lat-er-ally at 14
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--250
+Underfull \hbox (badness 10000) in paragraph at lines 236--243
 \OT1/ptm/m/n/10 fre-quen-cies rang-ing from 1 to 14 kHz ($\OML/cmm/m/it/10 f[] 
 \OT1/cmr/m/n/10 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--250
+Underfull \hbox (badness 10000) in paragraph at lines 236--243
 \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr
 /m/n/10 5\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
  3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5\OML/
 cmm/m/it/10 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 8\OML/cmm/m/i
 t/10 ; \OT1/cmr/m/n/10 9\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 10\OML/cmm/m/it/10 ;
  \OT1/cmr/m/n/10 11\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 12\OML/cmm/m/it/10 ; \OT1
-/cmr/m/n/10 13\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 14\OML/cmm/m/it/10 kHz$\OT1/pt
-m/m/n/10 ), yield-ing 84
+/cmr/m/n/10 13\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 14$ \OT1/ptm/m/n/10 kHz), yiel
+d-ing
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 243--250
-\OT1/ptm/m/n/10 ap-prox-i-mately 25 min-utes. For each mea-sured DPOAE
+Underfull \hbox (badness 2894) in paragraph at lines 236--243
+\OT1/ptm/m/n/10 84 in-de-pen-dent data sets. The stim-u-lus and record-ing
  []
 
 <Fig_Sequence.png, id=39, 545.03625pt x 249.93375pt>
 File: Fig_Sequence.png Graphic file (type png)
 <use Fig_Sequence.png>
-Package pdftex.def Info: Fig_Sequence.png  used on input line 253.
+Package pdftex.def Info: Fig_Sequence.png  used on input line 246.
 (pdftex.def)             Requested size: 252.0pt x 115.55821pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [5 <./Fig_ALM_DataBased.png> <./Fig_Sequence.png>]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 271.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 265.
 Package epstopdf Info: Source file: <Fig_3_connectivity.eps>
 (epstopdf)                    date: 2024-12-11 14:46:31
 (epstopdf)                    size: 84734 bytes
@@ -477,13 +471,13 @@ Package epstopdf Info: Source file: <Fig_3_connectivity.eps>
 (epstopdf)                    size: 84164 bytes
 (epstopdf)             Command: <repstopdf --outfile=Fig_3_connectivity-eps-con
 verted-to.pdf Fig_3_connectivity.eps>
-(epstopdf)             \includegraphics on input line 275.
+(epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
 <Fig_3_connectivity-eps-converted-to.pdf, id=43, 734.745pt x 473.77pt>
 File: Fig_3_connectivity-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig_3_connectivity-eps-converted-to.pdf>
 Package pdftex.def Info: Fig_3_connectivity-eps-converted-to.pdf  used on input
- line 275.
+ line 269.
 (pdftex.def)             Requested size: 252.0pt x 162.48935pt.
 Package epstopdf Info: Source file: <Fig_5_assembly2.eps>
 (epstopdf)                    date: 2024-12-11 14:46:31
@@ -493,13 +487,13 @@ Package epstopdf Info: Source file: <Fig_5_assembly2.eps>
 (epstopdf)                    size: 336154 bytes
 (epstopdf)             Command: <repstopdf --outfile=Fig_5_assembly2-eps-conver
 ted-to.pdf Fig_5_assembly2.eps>
-(epstopdf)             \includegraphics on input line 327.
+(epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
 <Fig_5_assembly2-eps-converted-to.pdf, id=44, 901.3675pt x 445.665pt>
 File: Fig_5_assembly2-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig_5_assembly2-eps-converted-to.pdf>
 Package pdftex.def Info: Fig_5_assembly2-eps-converted-to.pdf  used on input li
-ne 327.
+ne 320.
 (pdftex.def)             Requested size: 516.0pt x 255.14014pt.
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
@@ -508,12 +502,15 @@ Overfull \vbox (5.0pt too high) has occurred while \output is active []
 <Fig_Efficiency_v3.png, id=54, 941.01563pt x 613.54219pt>
 File: Fig_Efficiency_v3.png Graphic file (type png)
 <use Fig_Efficiency_v3.png>
-Package pdftex.def Info: Fig_Efficiency_v3.png  used on input line 358.
+Package pdftex.def Info: Fig_Efficiency_v3.png  used on input line 351.
 (pdftex.def)             Requested size: 252.0pt x 164.30113pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
- [7 <./Fig_5_assembly2-eps-converted-to.pdf>]
+ [7 <./Fig_5_assembly2-eps-converted-to.pdf> <./Fig_Efficiency_v3.png>]
 Package epstopdf Info: Source file: <Fig_8_Coverage_sameClim.eps>
 (epstopdf)                    date: 2024-12-11 14:46:31
 (epstopdf)                    size: 182639 bytes
@@ -523,13 +520,13 @@ df>
 (epstopdf)                    size: 321965 bytes
 (epstopdf)             Command: <repstopdf --outfile=Fig_8_Coverage_sameClim-ep
 s-converted-to.pdf Fig_8_Coverage_sameClim.eps>
-(epstopdf)             \includegraphics on input line 377.
+(epstopdf)             \includegraphics on input line 370.
 Package epstopdf Info: Output file is already uptodate.
-<Fig_8_Coverage_sameClim-eps-converted-to.pdf, id=64, 1156.32pt x 564.1075pt>
+<Fig_8_Coverage_sameClim-eps-converted-to.pdf, id=65, 1156.32pt x 564.1075pt>
 File: Fig_8_Coverage_sameClim-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig_8_Coverage_sameClim-eps-converted-to.pdf>
 Package pdftex.def Info: Fig_8_Coverage_sameClim-eps-converted-to.pdf  used on 
-input line 377.
+input line 370.
 (pdftex.def)             Requested size: 412.80157pt x 201.38284pt.
 Package epstopdf Info: Source file: <Fig_9_Cumula.eps>
 (epstopdf)                    date: 2024-12-11 14:46:31
@@ -539,13 +536,13 @@ Package epstopdf Info: Source file: <Fig_9_Cumula.eps>
 (epstopdf)                    size: 16785 bytes
 (epstopdf)             Command: <repstopdf --outfile=Fig_9_Cumula-eps-converted
 -to.pdf Fig_9_Cumula.eps>
-(epstopdf)             \includegraphics on input line 392.
+(epstopdf)             \includegraphics on input line 385.
 Package epstopdf Info: Output file is already uptodate.
-<Fig_9_Cumula-eps-converted-to.pdf, id=65, 1124.2pt x 461.725pt>
+<Fig_9_Cumula-eps-converted-to.pdf, id=66, 1124.2pt x 461.725pt>
 File: Fig_9_Cumula-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig_9_Cumula-eps-converted-to.pdf>
 Package pdftex.def Info: Fig_9_Cumula-eps-converted-to.pdf  used on input line 
-392.
+385.
 (pdftex.def)             Requested size: 252.0pt x 103.49614pt.
 Package epstopdf Info: Source file: <Fig_10_Boxplots.eps>
 (epstopdf)                    date: 2024-12-11 14:46:31
@@ -555,271 +552,114 @@ Package epstopdf Info: Source file: <Fig_10_Boxplots.eps>
 (epstopdf)                    size: 154157 bytes
 (epstopdf)             Command: <repstopdf --outfile=Fig_10_Boxplots-eps-conver
 ted-to.pdf Fig_10_Boxplots.eps>
-(epstopdf)             \includegraphics on input line 405.
+(epstopdf)             \includegraphics on input line 396.
 Package epstopdf Info: Output file is already uptodate.
-<Fig_10_Boxplots-eps-converted-to.pdf, id=66, 1154.3125pt x 445.665pt>
+<Fig_10_Boxplots-eps-converted-to.pdf, id=67, 1154.3125pt x 445.665pt>
 File: Fig_10_Boxplots-eps-converted-to.pdf Graphic file (type pdf)
 <use Fig_10_Boxplots-eps-converted-to.pdf>
 Package pdftex.def Info: Fig_10_Boxplots-eps-converted-to.pdf  used on input li
-ne 405.
+ne 396.
 (pdftex.def)             Requested size: 252.0pt x 97.29176pt.
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
- [8 <./Fig_Efficiency_v3.png>]
+ [8]
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
  [9 <./Fig_8_Coverage_sameClim-eps-converted-to.pdf> <./Fig_9_Cumula-eps-conver
-ted-to.pdf> <./Fig_10_Boxplots-eps-converted-to.pdf>]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 5
-28.
+ted-to.pdf> <./Fig_10_Boxplots-eps-converted-to.pdf>] (./generic-color-rev2.bbl
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+57.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \vbox (5.0pt too high) has occurred while \output is active []
-
- [10]
-LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 5
-82.
-
-(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omspcr.fd
-File: omspcr.fd 
-)
-LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 582.
-LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <9> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 583.
-
-Overfull \hbox (8.91965pt too wide) in paragraph at lines 579--586
- []
+Underfull \hbox (badness 2343) in paragraph at lines 155--160
+[]\OT1/ptm/m/n/8 E. Dal-hoff and D. Zelle, ``\OT1/pcr/m/n/8 Verfahren zur autom
+atischen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 579--586
-
- []
-
-<fig1.png, id=93, 249.3315pt x 189.22694pt>
-File: fig1.png Graphic file (type png)
-<use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 614.
-(pdftex.def)             Requested size: 252.0pt x 191.25339pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 636--637
-[]\OT1/ptm/m/n/10 A gen-eral IEEE styleguide is avail-able at
- []
-
-\width=\dimen165
-
-Underfull \hbox (badness 2591) in paragraph at lines 696--697
-[]\OT1/ptm/m/n/8 1 erg/(G$\OMS/cmsy/m/n/8 ^^A$\OT1/ptm/m/n/8 g) $\OT1/cmr/m/n/8
- =$ \OT1/ptm/m/n/8 1 emu/g $\OMS/cmsy/m/n/8 !$ \OT1/ptm/m/n/8 1
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
+\OT1/pcr/m/n/8 Bestimmung einer individuellen Funktion
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 670--732
-[][]
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
+\OT1/pcr/m/n/8 einer DPOAEPegelkarte eines menschlichen oder
  []
 
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
- [11 <./fig1.png (PNG copy)>]
-Underfull \hbox (badness 2941) in paragraph at lines 793--800
-\OT1/ptm/m/n/10 (red/green/blue) and CMYK (cyan/magenta/yellow/black).
- []
-
-
-Underfull \hbox (badness 2469) in paragraph at lines 801--810
-\OT1/ptm/m/n/10 color space. Grayscale im-ages should be sub-mit-ted in
- []
-
-
-Overfull \vbox (5.0pt too high) has occurred while \output is active []
-
- [12]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 9
-30.
-
-(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Overfull \vbox (5.0pt too high) has occurred while \output is active []
-
- [13]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-052.
-
-(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-)
-LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <10> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 1052.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1064
-[]\OT1/ptm/m/n/10 Contributions to the Trans-ac-tions, Jour-nals, and
- []
-
-
-Underfull \hbox (badness 1796) in paragraph at lines 1053--1064
-\OT1/ptm/m/n/10 Let-ters may be sub-mit-ted elec-tron-i-cally on IEEE's on-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1064
-\OT1/ptm/m/n/10 line manuscript sub-mis-sion and peer-review sys-tem,
- []
-
-
-Underfull \hbox (badness 5832) in paragraph at lines 1053--1064
-\OT1/ptm/m/n/10 Schol-arOne\TS1/ptm/m/n/10 ® \OT1/ptm/m/n/10 Manuscripts. You c
-an get a list-ing of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1064
-\OT1/ptm/m/n/10 the pub-li-ca-tions that par-tic-i-pate in Schol-arOne at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1064
-[]$
- []
-
-
-Overfull \vbox (5.0pt too high) has occurred while \output is active []
-
- [14]
-Underfull \hbox (badness 1817) in paragraph at lines 1255--1265
-\OT1/ptm/m/n/10 J.K. Au-thor. (year, month). Ti-tle. pre-sented at ab-
- []
-
-
-Underfull \hbox (badness 1521) in paragraph at lines 1287--1293
-\OT1/ptm/m/n/10 day). Patent Num-ber [Type of medium]. Avail-able:
- []
-
-
-Overfull \vbox (5.0pt too high) has occurred while \output is active []
-
- [15]
-Underfull \hbox (badness 2680) in paragraph at lines 1334--1338
-[]\OT1/ptm/m/n/10 J. K. Au-thor, pri-vate com-mu-ni-ca-tion, Ab-brev.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1447--1453
-\OT1/ptm/m/n/8 Avail-able: $[]$.
- []
-
-
-Underfull \hbox (badness 4254) in paragraph at lines 1490--1497
-\OT1/ptm/m/n/8 nolo-gies de-ployed be-hind the fire-wall for cor-po-rate pro-du
-c-tiv-
- []
-
-
-Underfull \hbox (badness 3386) in paragraph at lines 1490--1497
-\OT1/ptm/m/n/8 ity. Pre-sented at INET96 An-nual Meet-ing. [On-line]. Avail-abl
-e:
- []
-
-
-Underfull \hbox (badness 4673) in paragraph at lines 1506--1511
-[]\OT1/ptm/m/n/8 Teralyzer. Lytera UG, Kirch-hain, Ger-many [On-line]. Avail-ab
-le:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1506--1511
-[]$\OT1/ptm/m/n/8 ,
- []
-
-<author1.png, id=119, 225.84375pt x 282.30469pt>
+ [10])
+<author1.png, id=92, 225.84375pt x 282.30469pt>
 File: author1.png Graphic file (type png)
 <use author1.png>
-Package pdftex.def Info: author1.png  used on input line 1613.
+Package pdftex.def Info: author1.png  used on input line 461.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 File: author1.png Graphic file (type png)
 <use author1.png>
-Package pdftex.def Info: author1.png  used on input line 1613.
+Package pdftex.def Info: author1.png  used on input line 461.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
-
-Overfull \vbox (5.0pt too high) has occurred while \output is active []
-
- [16]
-<author2.png, id=126, 225.84375pt x 282.30469pt>
+<author2.png, id=96, 225.84375pt x 282.30469pt>
 File: author2.png Graphic file (type png)
 <use author2.png>
-Package pdftex.def Info: author2.png  used on input line 1659.
+Package pdftex.def Info: author2.png  used on input line 507.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 File: author2.png Graphic file (type png)
 <use author2.png>
-Package pdftex.def Info: author2.png  used on input line 1659.
+Package pdftex.def Info: author2.png  used on input line 507.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1680.
-
-<author3.png, id=129, 225.84375pt x 282.30469pt>
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 528.
+<author3.png, id=99, 225.84375pt x 282.30469pt>
 File: author3.png Graphic file (type png)
 <use author3.png>
-Package pdftex.def Info: author3.png  used on input line 1690.
+Package pdftex.def Info: author3.png  used on input line 538.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 File: author3.png Graphic file (type png)
 <use author3.png>
-Package pdftex.def Info: author3.png  used on input line 1690.
+Package pdftex.def Info: author3.png  used on input line 538.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 
 Overfull \vbox (5.0pt too high) has occurred while \output is active []
 
- [17 <./author1.png> <./author2.png> <./author3.png>] (./generic-color-rev2.aux
-)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ [11 <./author1.png> <./author2.png> <./author3.png>] (./generic-color-rev2.aux
+) ) 
 Here is how much of TeX's memory you used:
- 4181 strings out of 476025
- 64963 string characters out of 5790017
- 1880388 words of memory out of 5000000
- 24525 multiletter control sequences out of 15000+600000
- 595004 words of font info for 166 fonts, out of 8000000 for 9000
+ 4071 strings out of 476025
+ 63624 string characters out of 5790017
+ 1877388 words of memory out of 5000000
+ 24439 multiletter control sequences out of 15000+600000
+ 583375 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,19n,65p,2006b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/
-local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/l
-ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
-exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
-e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
-2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/20
-23/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texliv
-e/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/t
-exmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2023/texmf-di
-st/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2023/texmf-dist/font
-s/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
-1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/h
-elvetic/uhvro8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/u
-tmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
-></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loc
-al/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on generic-color-rev2.pdf (17 pages, 1843022 bytes).
+ 57i,19n,65p,2006b,566s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb
+></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
+/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></u
+sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb
+></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/l
+ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></u
+sr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local
+/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texliv
+e/2023/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2023
+/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2023/texmf-
+dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2023/texmf-dist/f
+onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1
+/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on generic-color-rev2.pdf (11 pages, 1716085 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
+ 202 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
