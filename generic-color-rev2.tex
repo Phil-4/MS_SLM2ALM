@@ -53,13 +53,13 @@ Distortion-product otoacoustic emissions (DPOAE) are sound waves generated in th
 DPOAE can be measured in the ear canal with a sensitive microphone.
 
 In humans, the most pronounced DPOAEs are observed at the 3rd order intermodulation product frequency $f_{DP} = 2f_1 - f_2$.
-In clinical practice, DPOAEs are used as a diagnostic tool to evaluate the function of the cochlear amplifier (Davis, 1983), typically with fixed frequency ratio set to approx. $f_2 / f_1 = 1.2$ to maximize response amplitude \cite{GK1990}.
+In clinical practice, DPOAEs are used as a diagnostic tool to evaluate the function of the cochlear amplifier \cite{Ah2010}, typically with fixed frequency ratio set to approx. $f_2 / f_1 = 1.2$ to maximize response amplitude \cite{GK1990}.
 
 Several approaches have been made to establish an optimal standard paradigm for DPOAE measurements to assess the state of the so-called cochlear amplifier.
 These approaches can be described by the dimension of the parameter space \cite{Ms2002}.
 
 The method most commonly used in clinical settings, known as a DP-Gram, measures DPOAE at a single combination of stimulus levels (often $L_2, L_1 = 55, 65$ dB SPL) for each frequency \cite{Ab2001}, and thus represents a one-dimensional scan.
-The diagnostic information sought, i.e. the state of the cochlear amplifier, has a highly nonlinear and quite variable relation to the DPOAE amplitude (Gorga et al. 1996, Bhatt et al. 2023).
+The diagnostic information sought, i.e. the state of the cochlear amplifier, has a highly nonlinear and quite variable relation to the DPOAE amplitude \cite{Gr1996}, \cite{Bh2023}.
 Therefore, a normative range is defined within which the amplitudes should fall if the cochlear amplifier is functioning normally.
 This approach leads to a dichotomous diagnostic result, indicating whether or not the cochlear amplifier is healthy \cite{Pt1991},\cite{LM2003}.
  
@@ -87,9 +87,10 @@ The black solid lines are referred to as ridges of the DPOAE LMs.}
 \end{figure}
 
 \subsection{DPOAE level dependence}
+\label{sec1_model}
 Experimental evidence from multiple studies \cite{Wh1995}, \cite{Km2000}, \cite{ZD2015a}, \cite{ZD2020}, \cite{Cr1997} indicates that DPOAE LMs in mammalians, including humans, exhibit a common characteristic, particularly at low-to-moderate stimulus levels ($L_2<50$ dB SPL).
 This characteristic manifests as a distinct ridge (see Fig. \ref{fig_AMB}A) representing the maximum DPOAE amplitudes stimulated by the minimal stimulus pressure, i.e. at optimal combinations of $L_1$ and $L_2$.
-The ridge’s projection onto the $(L_2, L_1)$-plane yields the level combinations that can be considered individually optimal for each ear (\cite{ZD2020}).
+The ridge’s projection onto the $(L_2, L_1)$-plane yields the level combinations that can be considered individually optimal for each ear \cite{ZD2020}.
  
 The structure of DPOAE LMs can be roughly approximated by a 5-parameter model \cite{ED2017}.
 This model implies that the ridge is a line in a defined $(L_2, L_1, p_{DP})$-space with parabolic cross section when DPOAEs are scaled as level ($L_{DP}=20 log_{10} (p_{DP}/20 \mu$Pa), with $p_{DP}$ being the sound pressure of the DPOAE).
@@ -138,8 +139,7 @@ Adaptive LMs (ALMs) are defined as DPOAE LMs that are procedurally generated to 
 After measuring a prescribed starting point, the algorithm selects the next stimulus level combinations based on the configuration of assessed data and their relation to an expected LM shape.
 This is accomplished by comparison of accepted DPOAE, i.e. those with $SNR \ge 10$ dB, with the 5-parameter model defining the a priori expectance of a LM shape.
 
-An initial level combination (i.e.
-$p_1^1$ on Fig.\ref{fig_AMB}B) is chosen in a frequency-dependent manner with$L_{2,START} = 55 dB$ for $f_2 < 4 kHz$, 60 dB for $f_2 < 8 kHz$, and $65 dB$ for larger $f_2$, while $L_1$ is chosen to lie $6 dB$ below the group-optimal level according to \cite{ZD2020} (see Table I, Sec. V  I).
+An initial level combination (i.e. $p_1^1$ on Fig.\ref{fig_AMB}B) is chosen in a frequency-dependent manner with$L_{2,START} = 55 dB$ for $f_2 < 4 kHz$, 60 dB for $f_2 < 8 kHz$, and $65 dB$ for larger $f_2$, while $L_1$ is chosen to lie $6 dB$ below the group-optimal level according to \cite{ZD2020} (see Table I, Sec. V  I).
  In principle, all adaptive methods described in the following can be utilized stand-alone or in conjunction, depending on the particular clinical or research task.
 We subdivide the adaptive methods into two groups.
 
@@ -158,7 +158,7 @@ It requires a minimum of three points per scan (the ridge point and one point on
 The first group of ALM acquisition methods relies on the expected shape of a DPOAE level map, i.e., it uses a priori knowledge as discussed in Section I.C, and shown in Fig. \ref{fig_AMB}A.
 Two methods belong to the a priori group: the so-called ridge estimator and ridge follower.
 To simplify the description of the ALM methods, we refer to a $(L_2’, L_1’)$-plane which is rotated such that the projection of the ridge onto the $(L_2, L_1)$-plane aligns with the $L_2'$ axis (s. Fig. \ref{fig_AMB}B).
-The angle of the rotation corresponds to the group mean parameter a of the 5-parameter model (s. Sec. I.B, and \cite{ZD2020}).
+The angle of the rotation corresponds to the group mean parameter a of the 5-parameter model (s. Sec. \ref{sec1_model}, and \cite{ZD2020}).
 
 The ridge estimator \cite{ED2017} is utilized to verify the presence of the presumed DPOAE LM and to roughly estimate model surface properties.
 The algorithm is comprised of three steps – two ridge scans and one intermediate point (see Fig. \ref{fig_AMB}A for ridge and Fig. \ref{fig_AMB}B for illustration of the ridge estimator algorithm):
@@ -166,7 +166,7 @@ The algorithm is comprised of three steps – two ridge scans and one intermedia
 \STATE An initial ridge scan $p_k^1$ samples the presumed ridge along $L_1'$ starting from an initial level combination $p_1^1$ and aims to detect its maximum to prove the existence of a ridge.
 Every single ridge scan might take up to $k$ DPOAE amplitudes or points (here: $k=4$), limited by a pre-defined region of interest (ROI).
 The ROI might be tailored to specific tasks, but typically will contain an upper limit for $L_2$ and $L_1$ to avoid acoustic overstimulation and/or technical distortions (here: $95$ dB SPL).
-Sampling during a ridge scan has two modes: 1) if there are no accepted DPOAE amplitudes or points, the $L_1'$ increment is set to $10$ dB, 2) if the acquired DPOAE adhere to the predefined acceptance criteria (based on SNR, s. Sec. II.D), the $L_1'$ increment is set to $6$ dB.
+Sampling during a ridge scan has two modes: 1) if there are no accepted DPOAE amplitudes or points, the $L_1'$ increment is set to $10$ dB, 2) if the acquired DPOAE adhere to the predefined acceptance criteria (based on SNR, s. Sec. \ref{sec2_study}), the $L_1'$ increment is set to $6$ dB.
 If the detected DPOAE amplitude $p_{DP}$ decreases after two successful measurements, the $L_1'$ increment is switched to be negative.
 Once three DPOAE have been accepted, the maximum is determined by solving a quadratic equation to their levels.
 If four attempts fail to determine a ridge, an additional scan is deployed on half distance between the existing scan and upper ROI boundaries.
@@ -228,6 +228,7 @@ The final step is to employ the general case for all groups simultaneously, mean
 The expansion case has the advantage to constrain the ROI to an area where the probability might be deemed high to lead to accepted DPOAE.
 
 \subsection{Study design and subjects}
+\label{sec2_study}
 
 The pilot study, validating the adaptive algorithm for DPOAE LM acquisition, included three normal-hearing subjects (age: 27, 31 and 37 years old).
 All three subjects were classified as normal-hearing as all pure-tone thresholds were better than $20$ dB hearing level (dB HL) for frequencies between 1 and 8 kHz.
@@ -258,6 +259,7 @@ If these criteria are satisfied, the ridge follower algorithm complements the le
 The study was approved by the Ethics Committee of the University of Tübingen and   was conducted in accordance with the Declaration of Helsinki for human experiments.
 
 \subsection{Post-processing and analysis}
+\label{sec2_pproc}
 
 \subsubsection{Connectivity-based analysis}
 To compare and analyse SLM and ALM without relying on the surface shape produced by the DPOAE, we use quantities that are present in each measurement: number of all acquired points ($N_{all}$), number of points with accepted DPOAE amplitudes ($N_{acc}$), and the area of the alpha shape ($S$) of $N_{acc}$ (s. Fig. \ref{fig_CNT}).
@@ -421,18 +423,18 @@ This dynamic approach allowed us to obtain useful data in the case that the a pr
 
 \subsection{Time concern}
 It might be instructive to consider two cases, a typical clinical and a typical research application.
-In a routine clinical application, more than some 7 to 9 points per level map will probably be undesirable, because with a typical amount of 6–8 test frequencies, extrapolation of the figures given in Sec. II.D would lead to a measurement time of 3min35' to 6min8' in the current implementation.
+In a routine clinical application, more than some 7 to 9 points per level map will probably be undesirable, because with a typical amount of 6–8 test frequencies, extrapolation of the figures given in Sec. \ref{sec2_study} would lead to a measurement time of 3min35' to 6min8' in the current implementation.
 According to our estimation, by further optimization of the implementation, i.e. reducing measurement time where in the current implementation excessively high SNR are obtained, the measurement time could be reduced to below 4 min, what would be clinically practicable.
 The added use of the technique would then be: 1) Avoiding incorrect DPOAE growth properties due to applying individually wrong level combinations, 2) Obtaining an additional independent parameter, i.e. the relative position of the LM's ridge along the $L'_1$-coordinate, which is a marker for conductive hearing loss.
 
-If we consider a basic research aim as, for instance, the characterization of individual LMs dependent on the frequency ratio $f_2/f_1$, one easily ends up with substantial measurements times: for instance, if one sets out for testing 5 different frequency ratios at 7 frequencies, and reduces the number of points per LM to 12, we find approximately 35' overall measurement time (calculated from the overall measurement time of 25' and the number of points per LM and frequencies used in this study, s. Sec. II D.
+If we consider a basic research aim as, for instance, the characterization of individual LMs dependent on the frequency ratio $f_2/f_1$, one easily ends up with substantial measurements times: for instance, if one sets out for testing 5 different frequency ratios at 7 frequencies, and reduces the number of points per LM to 12, we find approximately 35' overall measurement time (calculated from the overall measurement time of 25' and the number of points per LM and frequencies used in this study, s. Sec. \ref{sec2_study}.
 The estimate depends on the mean frequency because of the pulse length definition.).
 This is a considerable measurement time which easily grows to more than an hour with more demanding requirements on sampling density of the different dimensions of interest, and at such high measurement times, the 12\% gain in accepted DPOAE compared to SLM is highly useful (s. Sec. III B).
 
 
 
 \subsection{LM post-processing and analysis}
-To analyse LMs of different origins, we devised a toolset that largely avoids a priori assumptions, the only exception being a weak a priori assumption about its direction (Sec. II E), in the sense that the algorithm for the identification of the vector of least gradient, i.e. the ridge, preferes the direction toward low $L_2$.
+To analyse LMs of different origins, we devised a toolset that largely avoids a priori assumptions, the only exception being a weak a priori assumption about its direction (Sec. \ref{sec2_pproc}), in the sense that the algorithm for the identification of the vector of least gradient, i.e. the ridge, preferes the direction toward low $L_2$.
 The method generally worked stable and was able to identify all ridges where the 5-parameter model also achieved an acceptable fit .
 The metrics for evaluation of SLM and ALM method performance, that is, number of accepted DPOAE, coverage, and resolution of the optimum path, all show that the ALM technique worked well and superior to the SLM method.
 Of course, some of these metrics, especially what we call here the resolution of the optimum path, include partially sort of a self-fulfilling prophecy.
